@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #ff6242;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .projects div {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff6242;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating functional and beautiful web applications.</p>
+            <img src="profile.jpg" alt="Profile Picture">
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div>
+                <h3>Project One: Personal Blog</h3>
+                <p>A personal blog where I write about web development, programming, and technology.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>Technologies Used: HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Project Two: E-commerce Site</h3>
+                <p>An e-commerce website that simulates real-world shopping experiences.</p>
+                <a href="#">View Project</a>
+                <ul>
+                    <li>Technologies Used: HTML, CSS, JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" required>
+                <label>Email:</label>
+                <input type="email" required>
+                <label>Message:</label>
+                <textarea rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <p>Follow me on <a href="#" style="color: white;">LinkedIn</a> | <a href="#" style="color: white;">GitHub</a></p>
+    </footer>
+</body>
+</html>
