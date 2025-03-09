@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Navigation Bar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-section {
+            list-style: none;
+        }
+        .nav-section a {
+            text-decoration: none;
+            padding: 8px 12px;
+            display: inline-block;
+        }
+
+        .nav-section.section1 a {
+            color: lightcoral;
+        }
+
+        .nav-section.section2 a {
+            color: lightblue;
+        }
+
+        .nav-section.section3 a {
+            color: lightgreen;
+        }
+
+        .nav-section > li > a {
+            font-weight: bold;
+        }
+
+        .nav-section a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .nav-section a:active {
+            color: yellow;
+        }
+
+        .nav-section a[href^="https"] {
+            color: orange !important; 
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-section section1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="https://example.com">External Link</a></li>
+        </ul>
+        <ul class="nav-section section2">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="https://example.com">External Link</a></li>
+        </ul>
+        <ul class="nav-section section3">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="https://example.com">External Link</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
